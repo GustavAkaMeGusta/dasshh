@@ -32,6 +32,7 @@ dasshh:
   system_prompt:
   tool_directories:
     - {DEFAULT_TOOLS_PATH}
+  theme: lime
 
 model:
   name: gemini/gemini-2.0-flash
@@ -116,13 +117,14 @@ def load_tools() -> None:
                         logger.error(f"Failed to import {module_path}: {e}")
 
 
-def load_config() -> None:
+def load_config() -> dict:
     """Load the configuration file."""
     if DEFAULT_CONFIG_PATH.exists():
-        return
+        return yaml.safe_load(DEFAULT_CONFIG_PATH.read_text())
 
     DEFAULT_CONFIG_PATH.parent.mkdir(parents=True, exist_ok=True)
     DEFAULT_CONFIG_PATH.write_text(DEFAULT_CONFIG)
+    return yaml.safe_load(DEFAULT_CONFIG)
 
 
 def get_from_config(key: str) -> dict | str | List | None:

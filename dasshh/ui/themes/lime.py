@@ -1,6 +1,6 @@
 from textual.theme import Theme
 
-lime_theme = Theme(
+lime = Theme(
     name="lime",
     primary="#76ff03",
     secondary="#64dd17",
