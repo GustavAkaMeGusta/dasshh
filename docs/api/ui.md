@@ -59,6 +59,7 @@ class Dasshh(App)
 | logger | logging.Logger | Application logger instance |
 | runtime | DasshhRuntime | AI runtime engine for processing queries |
 | session_service | SessionService | Database service for managing sessions |
+| config | dict | Dasshh configuration |
 
 ### `method` __init__
 
@@ -74,6 +75,12 @@ Initialize the Dasshh application
 - Loads and registers tools
 - Initializes database and runtime services
 - Sets up logging
+
+### `method` startup
+
+```python
+startup()
+```
 
 ### `method` on_mount
 

@@ -6,8 +6,8 @@ Dasshh currently supports a minimal set of keyboard shortcuts:
 
 | Key Combination | Action |
 | --------------- | ------ |
-| <kbd>Ctrl</kbd>+<kbd>C</kbd> | Quit the application |
-| <kbd>Ctrl</kbd>+<kbd>P</kbd> | Change theme |
+| <kbd>Ctrl</kbd>+<kbd>c</kbd> | Quit the application |
+| <kbd>Ctrl</kbd>+<kbd>t</kbd> | Toggle theme |
 
 ## Future Plans
 

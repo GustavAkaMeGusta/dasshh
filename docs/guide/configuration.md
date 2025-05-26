@@ -20,6 +20,7 @@ dasshh init-config
 |--------|-------------|
 | `skip_summarization` | Skip summarization of tool call results |
 | `system_prompt` | The system prompt for the assistant |
+| `theme` | The theme to use for the UI |
 | `tool_directories` | The directories to search for tools |
 
 ### Model Configuration
@@ -46,6 +47,7 @@ dasshh:
   system_prompt: |
     You are a helpful assistant that can help with tasks on the system.
     Your goal is to save user's time by performing tasks on their behalf.
+  theme: lime
   tool_directories:
     - /Users/viiyer/repos/dasshh/dasshh/apps
 

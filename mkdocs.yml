@@ -61,6 +61,7 @@ nav:
   - Guide:
     - Basics: guide/basics.md
     - Configuration: guide/configuration.md
+    - Themes: guide/themes.md
     - Keybindings: guide/keybindings.md
     - Abilities: guide/abilities.md
     - Build your own tools: guide/own-tools.md
